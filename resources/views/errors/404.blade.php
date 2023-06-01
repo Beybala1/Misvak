@@ -31,7 +31,7 @@
                         <div class="error-content">
                             <span>Opps!</span>
                             <p>@lang('frontend.404-2')</p>
-                            <a class="error-home" href="{{ route('frontend.index') }}">Ana səhifə</a>
+                            <a class="error-home" href="">Ana səhifə</a>
                         </div>
                     </div>
                 </div>

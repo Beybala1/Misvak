@@ -13,7 +13,7 @@ use App\Http\Controllers\Backend\StatusController as BStatus;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => 'admin', 'as' => 'backend.', 'middleware' => 'auth:sanctum', 'backendLanguage'], function () {
+Route::group(['as' => 'backend.', 'middleware' => 'auth:sanctum', 'backendLanguage'], function () {
 
     //General
     Route::get('/menu-status/change/{name}', [BStatus::class, 'change'])->name('menuStatus');

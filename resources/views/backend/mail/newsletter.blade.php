@@ -325,7 +325,7 @@
                   line-height: 25px;
                 "
                     >
-                        <p style="margin: 0;">Turquoise MMC</p>
+                        <p style="margin: 0;">Admin Panel</p>
                     </td>
                 </tr>
             </table>

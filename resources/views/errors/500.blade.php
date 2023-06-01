@@ -31,7 +31,7 @@
                         <div class="error-content">
                             <span>Opps!</span>
                             <p>Üzr istəyirik, gözlənilməyən problem baş verdi.</p>
-                            <a class="error-home" href="{{ route('frontend.index') }}">Ana səhifə</a>
+                            <a class="error-home" href="">Ana səhifə</a>
                         </div>
                     </div>
                 </div>
