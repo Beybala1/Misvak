@@ -12,12 +12,12 @@ class UserSeeder extends Seeder
     {
         $admin = User::create([
             'name' => 'Admin',
-            'email' => 'admin@panel.az',
+            'email' => 'admin@mizuha.az',
             'password' => '$2y$10$hcn0QuYc5NOiKrjaNMGNIeITHW3bzJ6UeTVWWg/1ZaFQ8eXX1Incm' //Password
         ]);
         $developer = User::create([
-            'name' => 'Developer',
-            'email' => 'developer@panel.az',
+            'name' => 'Developer mizuha',
+            'email' => 'developer@mizuha.az',
             'password' => '$2y$10$hcn0QuYc5NOiKrjaNMGNIeITHW3bzJ6UeTVWWg/1ZaFQ8eXX1Incm',
         ]);
         $admin->givePermissionTo(Permission::all());

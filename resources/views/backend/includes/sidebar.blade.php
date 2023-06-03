@@ -10,6 +10,62 @@
                         </a>
                     </li>
                 @endcan
+                @can('slider index')
+                    <li>
+                        <a href="{{ route('backend.slider.index') }}" class="waves-effect">
+                            <i class="ri-equalizer-fill"></i>
+                            <span>@lang('backend.slider')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('category index')
+                    <li>
+                        <a href="{{ route('backend.category.index') }}" class="waves-effect">
+                            <i class="ri-list-check"></i>
+                            <span>@lang('backend.category')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('products index')
+                    <li>
+                        <a href="{{ route('backend.products.index') }}" class="waves-effect">
+                            <i class="ri-shopping-basket-fill"></i>
+                            <span>@lang('backend.prdoucts')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('about index')
+                    <li>
+                        <a href="{{ route('backend.about.index') }}" class="waves-effect">
+                            <i class="ri-building-fill"></i>
+                            <span>@lang('backend.about')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('contact-info index')
+                    <li>
+                        <a href="{{ route('backend.contact-info.index') }}" class="waves-effect">
+                            <i class="ri-building-fill"></i>
+                            <span>@lang('backend.contact-info')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('social index')
+                    <li>
+                        <a href="{{ route('backend.social.index') }}" class="waves-effect">
+                            <i class="ri-instagram-fill"></i>
+                            <span>@lang('backend.social')</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('message index')
+                    <li>
+                        <a href="{{ route('backend.message.index') }}" class="waves-effect">
+                            <i class="ri-mail-fill"></i>
+                            <span>@lang('backend.message')</span>
+                        </a>
+                    </li>
+                @endcan
                 <li class="menu-title">@lang('backend.site-setting')</li>
                 @can('languages index')
                     <li>

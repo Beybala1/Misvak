@@ -4,17 +4,17 @@ namespace App\Models;
 
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Product;
 
 class Category extends Model implements TranslatableContract
 {
-    use Translatable, LogsActivity;
-    public $translatedAttributes = ['name'];
-    protected $fillable = ['slug'];
-    public function getActivitylogOptions(): LogOptions
+    use Translatable;
+    public $translatedAttributes = ['title'];
+    protected $guarded = [];
+
+    public function products()
     {
-        return LogOptions::defaults()->logOnly(['slug']);
+        return $this->hasMany(Product::class);
     }
 }

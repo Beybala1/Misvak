@@ -18,6 +18,12 @@ class DatabaseSeeder extends Seeder
             LanguageSeeder::class,
             PermissionsSeeder::class,
             UserSeeder::class,
+            SliderSeeder::class,
+            CategorySeeder::class,
+            // ProductSeeder::class,
+            AboutSeeder::class,
+            ContactInfoSeeder::class,
+            SocialSeeder::class,
         ]);
     }
 }
