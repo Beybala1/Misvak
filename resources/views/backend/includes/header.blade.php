@@ -4,10 +4,10 @@
             <div class="navbar-brand-box">
                 <a href="" class="logo logo-light">
                      <span class="logo-sm justify-content-center">
-                         <img src="{{asset('frontend/images/logo.png')}}" alt="logo-sm-light" height="35">
+                         <img src="{{asset('backend/images/logo.png')}}" alt="logo-sm-light" height="10">
                      </span>
                     <span class="logo-lg justify-content-center">
-                        <img src="{{asset('frontend/images/logo.png')}}" alt="logo-light" height="50">
+                        <img src="{{asset('backend/images/logo.png')}}" alt="logo-light" height="50">
                      </span>
                 </a>
             </div>
@@ -54,10 +54,13 @@
                     <i class="mdi mdi-chevron-down d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu">
-                    <a href="{{ route('logout') }}" type="submit" class="dropdown-item text-danger">
-                        <i class="ri-shut-down-line align-middle me-1 text-danger"></i>
-                        @lang('backend.logout')
-                    </a>
+                   <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="dropdown-item text-danger" style="border: none; background: none;">
+                            <i class="ri-shut-down-line align-middle me-1 text-danger"></i>
+                            @lang('backend.logout')
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
