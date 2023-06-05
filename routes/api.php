@@ -3,11 +3,12 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\SliderController;
-// use App\Http\Controllers\Api\CategoryController;
-// use App\Http\Controllers\Api\CategoryController;
-// use App\Http\Controllers\Api\CategoryController;
-// use App\Http\Controllers\Api\CategoryController;
-// use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\AboutController;
+use App\Http\Controllers\Api\ContactInfoController;
+use App\Http\Controllers\Api\SocialController;
+use App\Http\Controllers\Api\ContactController;
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
