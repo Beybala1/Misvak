@@ -51,4 +51,5 @@ return array (
   'new-password' => 'Новый пароль',
   'cnew-password' => 'Подтвердите новый пароль',
   'current-password' => 'Текущий пароль',
+  'company' => 'Информация о компании',
 );

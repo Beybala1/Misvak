@@ -161,4 +161,5 @@ return array (
   'vacancy' => 'Vakansiya',
   'views' => 'Izlənmə',
   'writers' => 'Yazıçılar',
+  'company' => 'Şirkət məlumatları',
 );

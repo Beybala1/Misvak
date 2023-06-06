@@ -33,6 +33,7 @@ Route::group(['as' => 'backend.', 'middleware' => 'auth:sanctum', 'backendLangua
     Route::post('/give-permission-to-user-update', [BPermission::class, 'giveUserPermissionUpdate'])->name('givePermissionUserUpdate');
     //Statuses
     Route::get('/site-language/{id}/change-status', [BSiteLan::class, 'siteLanStatus'])->name('siteLanStatus');
+    Route::get('/social-status/{id}/change-status', [SocialController::class, 'socialStatus'])->name('social-status');
     //Delete
     Route::get('/site-languages/{id}/delete', [BSiteLan::class, 'delSiteLang'])->name('delSiteLang');
     Route::get('/settings/{id}/delete', [BSetting::class, 'delSetting'])->name('delSetting');

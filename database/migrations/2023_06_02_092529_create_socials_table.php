@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('icon');
             $table->text('link');
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

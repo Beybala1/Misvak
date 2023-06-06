@@ -76,4 +76,16 @@ class SocialController extends Controller
             return redirect()->route('backend.social.index');
         }
     }
+
+    public function socialStatus($id)
+    {
+        abort_if(Gate::denies('social index'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $status = Social::where('id', $id)->value('status');
+        if ($status == 1) {
+            Social::where('id', $id)->update(['status' => 0]);
+        } else {
+            Social::where('id', $id)->update(['status' => 1]);
+        }
+        return redirect()->route('backend.social.index');
+    }
 }

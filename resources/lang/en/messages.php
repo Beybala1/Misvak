@@ -14,5 +14,5 @@ return array(
     'info-not-found' => 'Sorry, no information found.',
     'is-correct' => 'entered correctly!',
     'not-correct' => 'wrongly entered!',
-    'message' => 'This file is requried',
+    'message' => 'Your request has been sent successfully',
 );

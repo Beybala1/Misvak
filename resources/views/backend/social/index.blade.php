@@ -33,6 +33,7 @@
                                 <th>@lang('backend.icon'):</th>
                                 <th>@lang('backend.link'):</th>
                                 <th>@lang('backend.time'):</th>
+                                <th>@lang('backend.status'):</th>
                                 <th>@lang('backend.actions'):</th>
                             </tr>
                         </thead>
@@ -43,6 +44,12 @@
                                 <td class="text-center"><i class="{{ $social->icon }}"></i></td>
                                 <td class="text-center">{{ $social->link }}</td>
                                 <td>{{ date('d.m.Y H:i:s',strtotime($social->created_at))}}</td>
+                                <td class="text-center">
+                                    <a href="{{ route('backend.social-status',['id'=>$social->id]) }}" title="@lang('backend.status')">
+                                        <input type="checkbox" id="switch" switch="primary" {{ $social->status == 1 ? 'checked' : '' }} />
+                                        <label for="switch4"></label>
+                                    </a>
+                                </td>
                                 <td class="text-center">
                                     <a class="btn btn-primary"
                                         href={{ route('backend.social.edit',$social->id) }}>

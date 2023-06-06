@@ -34,30 +34,45 @@
                         </a>
                     </li>
                 @endcan
-                @can('about index')
+
+
+                @canany(['about index','contact-info index','social index'])
                     <li>
-                        <a href="{{ route('backend.about.index') }}" class="waves-effect">
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="ri-building-fill"></i>
-                            <span>@lang('backend.about')</span>
+                            <span>@lang('backend.company')</span>
                         </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            @can('about index')
+                                <li>
+                                    <a href="{{ route('backend.about.index') }}" class="waves-effect">
+                                        <i class="ri-building-fill"></i>
+                                        <span>@lang('backend.about')</span>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('contact-info index')
+                                <li>
+                                    <a href="{{ route('backend.contact-info.index') }}" class="waves-effect">
+                                        <i class="ri-building-fill"></i>
+                                        <span>@lang('backend.contact-info')</span>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('social index')
+                                <li>
+                                    <a href="{{ route('backend.social.index') }}" class="waves-effect">
+                                        <i class="ri-instagram-fill"></i>
+                                        <span>@lang('backend.social')</span>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
                     </li>
-                @endcan
-                @can('contact-info index')
-                    <li>
-                        <a href="{{ route('backend.contact-info.index') }}" class="waves-effect">
-                            <i class="ri-building-fill"></i>
-                            <span>@lang('backend.contact-info')</span>
-                        </a>
-                    </li>
-                @endcan
-                @can('social index')
-                    <li>
-                        <a href="{{ route('backend.social.index') }}" class="waves-effect">
-                            <i class="ri-instagram-fill"></i>
-                            <span>@lang('backend.social')</span>
-                        </a>
-                    </li>
-                @endcan
+                @endcanany
+
+
+               
                 @can('message index')
                     <li>
                         <a href="{{ route('backend.message.index') }}" class="waves-effect">

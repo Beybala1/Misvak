@@ -159,4 +159,5 @@ return array (
   'views' => 'Просмотры',
   'write-contact-us' => 'If you would like to see your name on this list, write to the "<a href="/contact-us">Contact Us</a>" page.',
   'writers' => 'Writers',
+  'company' => 'Company information',
 );
