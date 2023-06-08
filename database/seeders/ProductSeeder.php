@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
 
         foreach ($categoryIds as $key => $categoryId) {
             $product = new Product();
-            $product->image = 'backend/images/product.jpg';
+            $product->image = 'backend/images/slider.jpg';
             $product->category_id = $categoryId;
             $product->save();
 

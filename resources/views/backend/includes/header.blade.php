@@ -4,10 +4,10 @@
             <div class="navbar-brand-box">
                 <a href="" class="logo logo-light">
                      <span class="logo-sm justify-content-center">
-                         <img src="{{asset('backend/images/logo.png')}}" alt="logo-sm-light" height="10">
+                         <img src="{{asset('backend/images/logo.jpg')}}" alt="logo-sm-light" height="35">
                      </span>
                     <span class="logo-lg justify-content-center">
-                        <img src="{{asset('backend/images/logo.png')}}" alt="logo-light" height="50">
+                        <img style="object-fit: contain;" src="{{asset('backend\images\logo-back.png')}}" alt="logo-light" height="100" width="100%">
                      </span>
                 </a>
             </div>
@@ -23,7 +23,6 @@
                     <img class="" src="{{ asset('backend/images/flags/'.app()->getLocale().'.jpg')}}" height="16">
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-
                     <a href="{{ route('backend.switchLang','az') }}" class="dropdown-item notify-item">
                         <img src="{{ asset('backend/images/flags/az.jpg')}}" class="me-1" height="12">
                         <span class="align-middle">Azərbaycan</span>
@@ -32,9 +31,9 @@
                         <img src="{{ asset('backend/images/flags/en.jpg')}}" class="me-1" height="12">
                         <span class="align-middle">English</span>
                     </a>
-                    <a href="{{ route('backend.switchLang','en') }}" class="dropdown-item notify-item">
+                    <a href="{{ route('backend.switchLang','ru') }}" class="dropdown-item notify-item">
                         <img src="{{ asset('backend/images/flags/ru.jpg')}}" class="me-1" height="12">
-                        <span class="align-middle">Русский</span>
+                        <span class="align-middle">Russian</span>
                     </a>
                 </div>
             </div>
@@ -54,7 +53,7 @@
                     <i class="mdi mdi-chevron-down d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu">
-                   <form method="POST" action="{{ route('logout') }}">
+                    <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit" class="dropdown-item text-danger" style="border: none; background: none;">
                             <i class="ri-shut-down-line align-middle me-1 text-danger"></i>

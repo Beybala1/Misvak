@@ -18,7 +18,7 @@ class SliderSeeder extends Seeder
     {
         foreach (range(1, 5) as $key => $index) {
             $slider = Slider::create([
-                'image' => 'backend/images/default.jpg',
+                'image' => 'backend/images/slider.jpg',
             ]);
 
             foreach (active_langs() as $lang) {

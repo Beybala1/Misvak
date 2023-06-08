@@ -17,7 +17,7 @@ class AboutSeeder extends Seeder
     public function run()
     {
         $about = About::create([
-                'image' => 'backend/images/default.jpg',
+                'image' => 'backend/images/slider.jpg',
             ]);
 
             foreach (active_langs() as $lang) {
