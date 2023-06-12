@@ -7,7 +7,7 @@
                          <img src="{{asset('backend/images/logo.jpg')}}" alt="logo-sm-light" height="35">
                      </span>
                     <span class="logo-lg justify-content-center">
-                        <img style="object-fit: contain;" src="{{asset('backend\images\logo-back.png')}}" alt="logo-light" height="100" width="100%">
+                        <img style="object-fit: contain;" src="{{asset('backend\images\logo.png')}}" alt="logo-light" height="100" width="100%">
                      </span>
                 </a>
             </div>
