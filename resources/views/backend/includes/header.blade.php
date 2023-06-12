@@ -4,7 +4,7 @@
             <div class="navbar-brand-box">
                 <a href="" class="logo logo-light">
                      <span class="logo-sm justify-content-center">
-                         <img src="{{asset('backend/images/logo.jpg')}}" alt="logo-sm-light" height="35">
+                         <img src="{{asset('backend/images/logo.png')}}" alt="logo-sm-light" height="10">
                      </span>
                     <span class="logo-lg justify-content-center">
                         <img style="object-fit: contain;" src="{{asset('backend\images\logo.png')}}" alt="logo-light" height="100" width="100%">
